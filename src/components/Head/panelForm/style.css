@@ -1,0 +1,53 @@
+.header_form_panel{
+	margin-left: 5vw;
+    margin-right: auto;
+	margin-top: 165px;
+	
+	height: 200px;
+	width: 200px;
+
+	/* border-color: white;
+	border-width: 1px;
+	border-style: solid; */
+
+	color: var(--white); 
+}
+
+
+.btn_header {
+	display: inline-block;
+
+	margin-left: auto;
+    margin-right: auto;
+	
+	height: 48px;
+	
+	padding: 12px 28px;
+
+	border-radius: 30px;
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+
+	color: var(--white); 
+
+	letter-spacing: 0.15px;
+	font-size: 16px;
+	font-weight: 500;
+
+	transition: opacity 0.2s ease-in;
+}
+
+
+input{
+	width: 300px;
+	height: 50px;
+
+	border-radius: 9px;
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+
+	padding: 10px;
+}
+

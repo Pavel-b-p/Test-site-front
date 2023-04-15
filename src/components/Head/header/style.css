@@ -1,0 +1,129 @@
+/* Header */
+.header {
+	min-height: 695px;
+
+	background: black;
+	color: white;
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../../img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center center;
+	
+}
+
+
+.header__wrapper {
+	min-height: 695px;
+
+	display: grid; /*эта хрень делит всю балду на части для дочек*/
+	grid-template-rows: 100px 1fr;
+	grid-template-columns: 6fr 4fr;
+	grid-template-areas: 
+	"h_cap h_cap"
+	"h_text h_form";
+}
+
+.header_cap{
+	grid-area: h_cap;
+	
+	/* background-color: green;  */
+}
+
+.header_text{
+	grid-area: h_text;
+	padding-left: 10vw;
+	
+	/* background-color: red; */
+
+}
+
+.header_form{
+	grid-area: h_form;
+	/* background-color: blue; */
+}
+
+.header__title {
+
+	margin-top: 40px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.4;
+	float: left;
+
+}
+
+.header__title h1 {
+	font-size: 50px;
+	/* font-weight: 700; */
+}
+
+.header__title h3 {
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+
+.header__title em {
+	font-style: normal;
+	color: var(--accent);
+}
+
+.bali_line{
+	display: flex;
+	align-items: center;
+}
+
+.bali_line h3{
+	line-height: 1.5; 
+	margin-top: 0;
+}
+
+.circle{
+	margin-left: 10px;
+	margin-right: 10px;
+
+	height: 50px;
+	width: 50px;
+
+	border-radius: 30px;
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+}
+
+
+.header__text {
+	margin-bottom: 40px;
+	font-size: 18px;
+	line-height: 1.333;
+}
+
+.header__text p + p {
+	margin-top: 0.5em;
+}
+
+.btn_header {
+	display: inline-block;
+	height: 55px;
+	width: 200px;
+	padding: 12px 28px;
+
+	margin-left: auto; 
+	margin-right: auto;
+
+	border-radius: 30px;
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+
+	color: var(--white); 
+
+	letter-spacing: 0.15px;
+	font-size: 20px;
+	font-weight: 500px;
+	text-align: center;
+
+	transition: opacity 0.2s ease-in;
+}
+
